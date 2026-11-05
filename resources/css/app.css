@@ -8,7 +8,7 @@ body {
 
 /* contenedor y tarjetas */
 .contenedor {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -81,20 +81,63 @@ button + button {
   font-size: 13px;
 }
 
-/* productos */
+/* encabezado y menú del admin */
 .encabezado {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.formulario {
-  display: flex;
-  gap: 10px;
+.encabezado h3 {
+  margin: 0;
 }
 
-.formulario input {
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.menu button + button {
+  margin-left: 0;
+}
+
+.menu button.activo {
+  background: #2563eb;
+  color: white;
+}
+
+/* formularios de los CRUD */
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.formulario input,
+.formulario select {
   flex: 1;
+  min-width: 160px;
+}
+
+.error {
+  color: #dc2626;
+  margin: 10px 0 0;
+}
+
+.etiqueta {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #e5e7eb;
 }
 
 table {

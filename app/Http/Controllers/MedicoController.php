@@ -12,7 +12,7 @@ class MedicoController extends Controller
     // READ: listar médicos (se pueden filtrar por especialidad y por tipo de vinculación)
     public function index(Request $request)
     {
-        $consulta = Medico::with('especialidad')->orderBy('nombre');
+        $consulta = Medico::with('especialidad', 'user')->orderBy('nombre');
 
         if ($request->filled('especialidad_id')) {
             $consulta->where('especialidad_id', $request->especialidad_id);
@@ -30,7 +30,7 @@ class MedicoController extends Controller
     {
         $datos = $request->validate($this->reglas(), $this->mensajes());
 
-        return Medico::create($datos)->load('especialidad');
+        return Medico::create($datos)->load('especialidad', 'user');
     }
 
     // UPDATE
@@ -40,7 +40,7 @@ class MedicoController extends Controller
 
         $medico->update($datos);
 
-        return $medico->load('especialidad');
+        return $medico->load('especialidad', 'user');
     }
 
     // DELETE: no se borra si ya tiene atenciones o usos de recurso
