@@ -1,6 +1,119 @@
 body {
   font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #333;
   margin: 0;
   padding: 20px;
-  background: #f4f6f8;
+}
+
+/* contenedor y tarjetas */
+.contenedor {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+/* login */
+.login {
+  max-width: 350px;
+  margin: 60px auto;
+}
+
+.login input,
+.login select {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.mensaje {
+  margin-top: 10px;
+}
+
+/* inputs y botones */
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button + button {
+  margin-left: 8px;
+}
+
+.secundario {
+  background: #6b7280;
+}
+
+.rojo {
+  background: #dc2626;
+}
+
+.pequeno {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+/* productos */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+}
+
+.formulario input {
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover td {
+  background: #f9fafb;
 }
