@@ -212,11 +212,14 @@ Variables de entorno que se configuran en el panel de Render (las claves secreta
 | `LOG_CHANNEL` | `stderr` |
 | `RUN_SEED` | `true` solo en el primer despliegue; después `false` para no duplicar datos |
 
+La base PostgreSQL gratis de Render expira a los 30 días de crearla.
+
 ---
 
 ## Enlaces
 
-- Aplicación desplegada: _pendiente_
+- Aplicación desplegada: https://medihonorarios.onrender.com (plan gratis: si lleva 15 minutos sin visitas se duerme y la primera carga tarda cerca de un minuto)
+- Repositorio: https://github.com/SamuelCh21/medihonorarios
 - Video explicativo: _pendiente_
 
 ## Autor
