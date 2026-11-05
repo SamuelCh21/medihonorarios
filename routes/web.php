@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 use App\Http\Controllers\AtencionController;
 use App\Http\Controllers\AuthController;

@@ -41,6 +41,7 @@ function editar(esp) {
 
 async function eliminar(esp) {
   if (!confirm('¿Eliminar la especialidad ' + esp.nombre + '?')) return
+  error.value = ''
   try {
     await axios.delete('/api/especialidades/' + esp.id)
     cargar()

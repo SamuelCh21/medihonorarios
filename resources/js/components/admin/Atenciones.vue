@@ -70,6 +70,7 @@ async function editar(a) {
 
 async function eliminar(a) {
   if (!confirm('¿Eliminar esta atención?')) return
+  error.value = ''
   try {
     await axios.delete('/api/atenciones/' + a.id)
     cargar()

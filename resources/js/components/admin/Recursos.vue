@@ -41,6 +41,7 @@ function editar(r) {
 
 async function eliminar(r) {
   if (!confirm('¿Eliminar el recurso ' + r.nombre + '?')) return
+  error.value = ''
   try {
     await axios.delete('/api/recursos/' + r.id)
     cargar()

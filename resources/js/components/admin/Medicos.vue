@@ -57,6 +57,7 @@ function editar(m) {
 
 async function eliminar(m) {
   if (!confirm('¿Eliminar a ' + m.nombre + '?')) return
+  error.value = ''
   try {
     await axios.delete('/api/medicos/' + m.id)
     cargar()

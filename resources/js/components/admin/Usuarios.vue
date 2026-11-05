@@ -42,6 +42,7 @@ function editar(u) {
 
 async function eliminar(u) {
   if (!confirm('¿Eliminar a ' + u.name + '?')) return
+  error.value = ''
   try {
     await axios.delete('/api/usuarios/' + u.id)
     cargar()

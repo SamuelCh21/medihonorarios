@@ -41,6 +41,7 @@ function editar(r) {
 
 async function eliminar(r) {
   if (!confirm('¿Eliminar la regla de $' + r.umbral + '?')) return
+  error.value = ''
   try {
     await axios.delete('/api/reglas-honorarios/' + r.id)
     cargar()

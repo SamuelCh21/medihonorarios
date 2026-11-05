@@ -49,6 +49,7 @@ function editar(u) {
 
 async function eliminar(u) {
   if (!confirm('¿Eliminar este uso de recurso?')) return
+  error.value = ''
   try {
     await axios.delete('/api/usos-recurso/' + u.id)
     cargar()
