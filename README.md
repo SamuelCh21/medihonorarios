@@ -220,7 +220,7 @@ La base PostgreSQL gratis de Render expira a los 30 días de crearla.
 
 - Aplicación desplegada: https://medihonorarios.onrender.com (plan gratis: si lleva 15 minutos sin visitas se duerme y la primera carga tarda cerca de un minuto)
 - Repositorio: https://github.com/SamuelCh21/medihonorarios
-- Video explicativo: _pendiente_
+- Video explicativo: https://youtu.be/FX7BvKHeClE
 
 ## Autor
 
